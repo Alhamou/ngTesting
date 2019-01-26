@@ -1,0 +1,7 @@
+<ul class="list-group" >
+  <li class="list-group-item">
+    <input (change)="onchangeCompleted(todo)" [checked]="todo.completed" type="checkbox" id="{{todo.id}}">
+    <label class=" p-2" for="{{todo.id}}" [class.notCompleted]="todo.completed">{{todo.title}}</label>
+    <button (click)="deleteItem(todo)" style="float: right" class="btn btn-info">Submit</button>
+  </li>
+</ul>
